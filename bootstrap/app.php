@@ -1,13 +1,13 @@
 <?php
 
 /*
-|--------------------------------------------------------------------------
-| Create The Application
-|--------------------------------------------------------------------------
+|----------------------------------------------------------------- -------------------------
+| Crear la aplicación
+|----------------------------------------------------------------- -------------------------
 |
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
+| Lo primero que haremos será crear una nueva instancia de la aplicación Laravel
+| que sirve como "pegamento" para todos los componentes de Laravel, y es
+| el contenedor IoC para el sistema que une todas las diversas partes.
 |
 */
 
@@ -16,13 +16,13 @@ $app = new Illuminate\Foundation\Application(
 );
 
 /*
-|--------------------------------------------------------------------------
-| Bind Important Interfaces
-|--------------------------------------------------------------------------
+|----------------------------------------------------------------- -------------------------
+| Vincular interfaces importantes
+|----------------------------------------------------------------- -------------------------
 |
-| Next, we need to bind some important interfaces into the container so
-| we will be able to resolve them when needed. The kernels serve the
-| incoming requests to this application from both the web and CLI.
+| A continuación, debemos enlazar algunas interfaces importantes en el contenedor para que
+| podamos resolverlas cuando sea necesario. Los nucleos atienden las
+| solicitudes entrantes a esta aplicación desde la web y CLI.
 |
 */
 
@@ -42,13 +42,13 @@ $app->singleton(
 );
 
 /*
-|--------------------------------------------------------------------------
-| Return The Application
-|--------------------------------------------------------------------------
+|----------------------------------------------------------------- -------------------------
+| Devolver la solicitud
+|----------------------------------------------------------------- -------------------------
 |
-| This script returns the application instance. The instance is given to
-| the calling script so we can separate the building of the instances
-| from the actual running of the application and sending responses.
+| Este script devuelve la instancia de la aplicación. La instancia se da a
+| el script de llamada para que podamos separar la construcción de las instancias
+| desde el funcionamiento real de la aplicación y el envío de respuestas.
 |
 */
 

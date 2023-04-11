@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 define('LARAVEL_START', microtime(true));
 
 /*
-|--------------------------------------------------------------------------
-| Check If The Application Is Under Maintenance
-|--------------------------------------------------------------------------
+|---------------------------------------------------------------
+| Comprobar si la aplicación está en mantenimiento
+|---------------------------------------------------------------
 |
-| If the application is in maintenance / demo mode via the "down" command
-| we will load this file so that any pre-rendered content can be shown
-| instead of starting the framework, which could cause an exception.
-|
+| Si la aplicación está en modo de mantenimiento/demostración a 
+| través del comando "abajo" cargaremos este archivo para que se  
+| pueda mostrar cualquier contenido renderizado previamente en 
+| lugar de iniciar el marco, lo que podría causar una excepción.
 */
 
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
@@ -21,26 +21,26 @@ if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php'))
 }
 
 /*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
+|----------------------------------------------------------------- -------------------------
+| Registre el cargador automático
+|----------------------------------------------------------------- -------------------------
 |
-| Composer provides a convenient, automatically generated class loader for
-| this application. We just need to utilize it! We'll simply require it
-| into the script here so we don't need to manually load our classes.
+| Composer proporciona un práctico cargador de clases generado automáticamente para
+| esta aplicación. ¡Solo tenemos que utilizarlo! Simplemente lo requeriremos
+| en el script aquí para que no necesitemos cargar manualmente nuestras clases.
 |
 */
 
 require __DIR__.'/../vendor/autoload.php';
 
 /*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
+|----------------------------------------------------------------- -------------------------
+| Ejecutar la aplicación
+|----------------------------------------------------------------- -------------------------
 |
-| Once we have the application, we can handle the incoming request using
-| the application's HTTP kernel. Then, we will send the response back
-| to this client's browser, allowing them to enjoy our application.
+| Una vez que tenemos la aplicación, podemos manejar la solicitud entrante usando
+| el núcleo HTTP de la aplicación. Luego, le enviaremos la respuesta
+| al navegador de este cliente, permitiéndole disfrutar de nuestra aplicación.
 |
 */
 
