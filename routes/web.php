@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+# para tal ruta indico un controlador, 
+# por defecto el metodo del controller 
+# que va tratar el request es __invoke 
+Route::get('/', [ HomeController::class , 'index' ]);
+
+
